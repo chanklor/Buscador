@@ -1,6 +1,7 @@
 package mx.com.ccplus.buscador;
 
 import java.io.IOException;
+import java.sql.ResultSet;
 import java.util.ArrayList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -15,20 +16,21 @@ public class BuscadorInit {
     public static ArrayList<String[]> lista;
     public static boolean flag = false;
     public static String query;
+    public static ResultSet rs;
     
     private Parent root;
     private TextField campo;
     
-    public BuscadorInit(Parent root, TextField campo, ArrayList<String[]> lista){
-        this.campo = campo;
-        this.root = root;
-        this.lista = lista;
-    }
+//    public BuscadorInit(Parent root, TextField campo, ArrayList<String[]> lista){
+//        this.campo = campo;
+//        this.root = root;
+//        this.lista = lista;
+//    }
     
-    public BuscadorInit(Parent root, TextField campo, String query){
+    public BuscadorInit(Parent root, TextField campo, ResultSet rs){
         this.campo = campo;
         this.root = root;
-        this.query = query;
+        this.rs = rs;
     }
     
     public String buscarAlumnoString(){
