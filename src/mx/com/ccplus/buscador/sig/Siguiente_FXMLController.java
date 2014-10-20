@@ -62,19 +62,14 @@ public class Siguiente_FXMLController implements Initializable {
                     e.printStackTrace();
                 }
             }
-            
-            System.out.println("id_actual: " + id_actual);
-            
+                        
             int indice_actual = 0;
             for (int i = 0; i < BuscadorInit.lista.size(); i++) {
-                System.out.println("for: " + i);
                 if(BuscadorInit.lista.get(i)[0].equals(Integer.toString(id_actual))){
                     indice_actual = i;
-                    System.out.println("entro if");
                 }
             }
             
-            System.out.println("indice_actual: " + indice_actual);
             
             for (int i = (indice_actual+1); i < BuscadorInit.lista.size(); i++) {
                 
@@ -119,19 +114,14 @@ public class Siguiente_FXMLController implements Initializable {
                     e.printStackTrace();
                 }
             }
-            
-            System.out.println("id_actual: " + id_actual);
-            
+                        
             int indice_actual = 0;
             for (int i = 0; i < BuscadorInit.lista.size(); i++) {
-                System.out.println("for: " + i);
                 if(BuscadorInit.lista.get(i)[0].equals(Integer.toString(id_actual))){
                     indice_actual = i;
-                    System.out.println("entro if");
                 }
             }
             
-            System.out.println("indice_actual: " + indice_actual);
             
             for (int i = (indice_actual-1); i >= 0; i--) {
                 
