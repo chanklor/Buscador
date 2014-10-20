@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="80.0" prefWidth="311.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.com.ccplus.buscador.sig.Siguiente_FXMLController">
+    <stylesheets>
+        <URL value="@siguiente_fxml.css" />
+    </stylesheets>
+   <children>
+      <Button layoutX="160.0" layoutY="45.0" mnemonicParsing="false" onMouseClicked="#botonSiguiente" prefHeight="25.0" prefWidth="138.0" text="Siguiente" />
+      <Button layoutX="14.0" layoutY="45.0" mnemonicParsing="false" onMouseClicked="#botonAnterior" prefHeight="25.0" prefWidth="138.0" text="Anterior" />
+      <TextField fx:id="campo" layoutX="13.0" layoutY="14.0" prefHeight="25.0" prefWidth="285.0" />
+   </children>
+</AnchorPane>

@@ -1,6 +1,7 @@
-package mx.com.ccplus.buscador;
+package mx.com.ccplus.buscador.tabla;
 
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -17,6 +18,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.util.Callback;
+import mx.com.ccplus.buscador.BuscadorInit;
 
 public class Buscador_FXMLController implements Initializable {
     
@@ -38,7 +40,7 @@ public class Buscador_FXMLController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        BuscadorInit.flag = false;
+        BuscadorInit.flagTabla = false;
         assignColumns();
         populateData();
         applyFilter();
@@ -74,7 +76,7 @@ public class Buscador_FXMLController implements Initializable {
                         if (event.getClickCount() > 1) {
                             TableCell c = (TableCell) event.getSource();
                             BuscadorInit.res1 = c.getText();
-                            BuscadorInit.flag = true;
+                            BuscadorInit.flagTabla = true;
                             ((Node)(event.getSource())).getScene().getWindow().hide();
                         }
                     }
@@ -90,9 +92,11 @@ public class Buscador_FXMLController implements Initializable {
     }
     
     public void populateData(){
-        for (String[] arreglo : BuscadorInit.lista) {
-            this.lista.add(new PersonaModel(arreglo[0], arreglo[1]));
+        
+        for (String[] alumno : BuscadorInit.lista) {
+            this.lista.add(new PersonaModel(alumno[0], alumno[1]));
         }
+        
     }
     
     public void applyFilter(){

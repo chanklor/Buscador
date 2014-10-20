@@ -1,4 +1,4 @@
-package mx.com.ccplus.buscador;
+package mx.com.ccplus.buscador.tabla;
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;

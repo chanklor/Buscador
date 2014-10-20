@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="650.0" maxWidth="450.0" minHeight="354.0" minWidth="366.0" prefHeight="354.0" prefWidth="366.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.com.ccplus.buscador.Buscador_FXMLController">
+<AnchorPane id="AnchorPane" maxHeight="650.0" maxWidth="450.0" minHeight="354.0" minWidth="366.0" prefHeight="354.0" prefWidth="366.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.com.ccplus.buscador.tabla.Buscador_FXMLController">
     <stylesheets>
         <URL value="@buscador_fxml.css" />
     </stylesheets>
